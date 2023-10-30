@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>bike</title>
+</head>
+<body>
+    <div class="container">
+        <div class="path"></div>
+        <ul>
+            <li><a href="https://www.ktmgroups.com/"">Home</a></li>
+            <li><a href="https://www.mechanicadvisor.com/ktm-motorcycle-repair-shops"">Services</a></li>
+            <li><a href="https://www.ktm.com/en-us/contact.html"">Contact</a></li>
+            <li><a href="https://moneyinc.com/ktm-motorcycles/"">About us</a></li>
+        </ul>
+        <div class="thumbnail">
+        <li><img src="R.png" onclick="big('R.png');path('#e5e5e5e5');bg ('purple')"></li>
+        <li><img src="bike6.png" onclick="big('bike6.png');path('white');bg ('linear-gradient(70deg,yellow,green)')"></li>
+        <li><img src="th.png" onclick="big('th.png');path('#e5e5e5e5');bg ('rgba(255,0,0,0.8)')"></li>
+        </div>
+    </div>
+    <div class="big-image">
+        <img src="th.png" class="big">
+    </div>
+    <div class="content">
+        <p>&#x1F525;Let's ride&#x1F525;</p><br>
+        <h1>Don't Fear Dying<br>&nbsp; &nbsp;Fear Not Living</h1><br><br>
+        <h5>&#x1F60E;For Bike Lovers & Bike Riders&#x1F49D;</h5>
+    </div>
+    </div>
+    </body>
+    <script>
+        function big(img){
+            document.querySelector('.big').src=img;
+        }
+        function path(color){
+            const path=document.querySelector('.path');
+            path.style.background = color;
+        }
+        function bg(background){
+            const bg=document.querySelector('.container');
+            bg.style.background = background;
+        }
+        </script>
+</html>
